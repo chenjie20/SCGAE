@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scgae"
+version = "1.0.0"
+description = "Model-only implementation of Structure-Aware Consistent Graph Autoencoder"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0",
+    "torch-geometric>=2.3",
+]
+
+[tool.setuptools]
+py-modules = [
+    "decoder",
+    "edges",
+    "encoder",
+    "graph_type",
+    "losses",
+    "main",
+    "model",
+    "views",
+]
